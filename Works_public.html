@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>IB STUDIO</title>
+<link rel="shortcut icon" type="image⁄x-icon" href="edited_img/logo_small.png">
+
+  
+    <link rel="stylesheet"  href="web_style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <nav class="navigation">
+            <div class="logo"><a href="index.html" class=""> <img src="edited_img/logo_white%20(2).png" alt="ibstudio logo"></a></div>
+    <div id="mysidepanel" class="menupanel">
+                <a href="About.html" ><p>About</p></a>
+                <a href="Works.html" class="active"><p>Works</p></a>
+                <a href="Contact.html"><p>Contact</p></a>
+            </div>
+      <div class="sbar_wrapper">
+        <div class="sbar_cont">
+
+            <div class="sbar"></div>
+        </div>
+    </div>
+        </nav>
+        <div id="work">
+<div class="work_top_text"><p>제품 디자인 기반의 PUI 디자인 및 Web과 App을 포함한 서비스, UX / UI 디자인 작업을 진행합니다.</p>
+       
+       </div>
+        <div class="works_category">
+            <a href="Works.html">All</a>
+            <a href="Works_public.html" class="work_active">Public</a>
+            <a href="Works_product.html">Product</a>
+            <a href="Works_web.html">WEB</a>
+        </div>
+
+        <div class="works_contents">
+            <ul class="list">
+                <li>
+                    <a href="Subway_gate.html" class="card">
+                        <div class="thumb">
+                            <img src="edited_img/works_subgate.png" alt="" class="img_thumb" style="background: #161616">
+                            <div class="text_box">
+                                <div class="work_thumb_text">
+                                    <h1 class="work_thumb_title">Subway Gate</h1>
+                                    <p>A New Form of Subway Gate</p><br>
+                                    <p>Public Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>
+           
+
+
+            </ul>
+
+        </div></div>
+                <div class="footer">
+                <div class="footer_text" id="footer_text">
+                    <p>IB STUDIO <br>Inbeom Jang</p>
+                </div>
+                <div class="footer_text" style="text-align: left;">L : 서울특별시 노원구 공릉동 517- 74 <br>T : 010-9659-8119 <br>M : inbeomjang8119@gmail.com</div>
+                <div class="footer_text" >
+                    <p>© IB STUDIO 2019. <br>All Rights Reserved.</p>
+                </div>
+                <div class="footer_text" id="footer_top"><a href="#">Top&#8743</a></div>
+
+
+            </div>
+    </div>
+ <script>
+        document.addEventListener("scroll", scrollME);
+        function scrollME(){
+
+            var height =document.documentElement.offsetHeight ,
+            mx=(document.documentElement.scrollHeight -document.documentElement.clientHeight),
+            perc_v = ( (document.documentElement.scrollTop ) / (mx )   )*100;
+             document.getElementsByClassName("sbar")[0].style.width =perc_v+"%";
+
+           
+        }
+    </script>
+</body></html>

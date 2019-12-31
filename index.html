@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <title>IB STUDIO</title>
+<link rel="shortcut icon" type="image⁄x-icon" href="edited_img/logo_small.png">
+
+    <link rel="stylesheet" href="web_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <nav class="navigation">
+            <div class="logo"><a href="index.html" class=""> <img src="edited_img/logo_white%20(2).png" alt="ibstudio logo"></a></div>
+            <div id="mysidepanel" class="menupanel">
+                <a href="About.html">About</a>
+                <a href="Works.html">Works</a>
+                <a href="Contact.html">Contact</a>
+            </div>
+        </nav>
+
+        <div class="slide">
+
+            <ul>
+
+                <li>
+                    <div class="img_text">
+                        <p class="img_title">Subway Gate</p>
+                        <a href="Subway_gate.html" class="see_contents">See Contents &#10095</a>
+                    </div>
+                    
+                    <img src="edited_img/Subgate_main_white.png" alt="Subway Gate" class="slide_img_box" style="">
+
+                    <div class="home_textbox">
+                        <p class="home_text">A New Form of Subway Gate<br><br>Public Design <br>2017. 06</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="img_text">
+                        <p class="img_title">Coffee Maker</p>
+                        <a href="Coffee_Maker.html" class="see_contents">See Contents &#10095</a>
+                    </div>
+                    <img src="edited_img/coffeemaker_main_white.png" alt="Subway Gate" class="slide_img_box" style="z-index: 99">
+
+                    <div class="home_textbox">
+                        <p class="home_text">For Low Vision<br><br>Product / Universal Design <br>2017. 06</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="img_text">
+                        <p class="img_title">Queendom</p>
+                        <a href="Queendom.html" class="see_contents">See Contents &#10095</a>
+                    </div>
+                    <img src="edited_img/queendom_main_white.png" alt="" class="slide_img_box">
+
+                    <div class="home_textbox">
+                        <p class="home_text">Queendom Web Site<br><br>Web Design <br>2019. 11</p>
+                    </div>
+                </li>
+            </ul>
+
+   
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+
+
+
+</body></html>

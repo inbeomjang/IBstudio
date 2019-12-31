@@ -1,0 +1,258 @@
+         * {
+             margin: 0;
+             padding: 0;
+             scroll-behavior: smooth;
+             
+
+         }
+
+         html {
+             background-color: #222;
+         }
+
+         body {
+             overflow-x: hidden;
+             overflow-y: hidden;
+             font-family: 'Noto Sans', sans-serif;
+         }
+
+
+
+
+         .navigation {
+             width: 100%;
+             text-align: center;
+             height: 118px;
+             position: fixed;
+             z-index: 100;
+             top: 0;
+
+         }
+
+         #mysidepanel {
+             float: right;
+             margin-right: 100px;
+         }
+
+         .menupanel a {
+             padding: 44px;
+             text-decoration: none;
+             font-size: 16px;
+             color: #BFBFBF;
+             line-height: 30px;
+             display: inline-block
+         }
+
+
+         .menupanel a:after {
+             display: block;
+             content: '';
+             border-bottom: solid 3px white;
+             transform: scaleX(0);
+             transition: transform 250ms ease-in-out;
+
+         }
+
+         .menupanel a:hover:after {
+             transform: scaleX(1);
+         }
+
+         .active p {
+             border-bottom: solid 3px white;
+             margin-bottom: -3px;
+             color: white;
+         }
+
+
+
+         .logo {
+             text-align: left;
+             position: absolute;
+             margin: 30px 0px 0px 100px;
+         }
+
+
+         .logo img {
+             height: 53px;
+         }
+
+
+         .logo:hover {
+             opacity: .7;
+             transition: .3s
+         }
+
+
+
+
+
+
+         .img_text {
+             position: absolute;
+             padding-top: 12%;
+             margin-left: 100px;
+             overflow: hidden;
+             width: 400px;
+             text-align: left;
+         }
+
+         .img_title {
+             font-size: 55px;
+             color: white;
+
+         }
+
+         .slide {
+             width: 100%;
+             height: 100%;
+             margin: auto;
+             display: inline-block;
+
+
+         }
+
+         .slide_img_box {
+             width: 100%;
+             height: 100vh;
+             bottom: 0;
+             left: 0;
+             margin: auto;
+             overflow: auto;
+             right: 0;
+             top: 0;
+         }
+
+
+
+         ul {
+             text-align: center;
+             list-style: none;
+         }
+
+         li {
+             width: 100%;
+             display: inline-block;
+             list-style: none;
+             height: 100vh;
+         }
+
+         li img {
+             top: 0;
+             left: 0;
+             bottom: 0;
+             right: 0;
+             width: 100%;
+
+
+         }
+
+         .slide ul {
+             width: calc(100% * 3);
+             display: flex;
+             animation: slide 8s infinite;
+         }
+
+         .slide li {
+             width: calc(100% / 3);
+
+         }
+
+
+         @keyframes slide {
+             0% {
+                 margin-left: 0;
+             }
+
+             /* 0 ~ 10  : 정지 */
+             22% {
+                 margin-left: 0;
+             }
+
+             /* 10 ~ 25 : 변이 */
+             33% {
+                 margin-left: -100%;
+             }
+
+             /* 25 ~ 35 : 정지 */
+             55% {
+                 margin-left: -100%;
+             }
+
+             /* 35 ~ 50 : 변이 */
+             66% {
+                 margin-left: -200%;
+             }
+
+             88% {
+                 margin-left: -200%;
+             }
+
+             100% {
+                 margin-left: 0;
+             }
+         }
+
+
+
+
+
+         .see_contents {
+             text-decoration: none;
+             color: white;
+             font-size: 16px;
+         }
+
+         .see_contents:hover {
+             opacity: .7;
+             transition: .3s
+         }
+
+
+         .home_textbox {
+             width: 100%;
+             bottom: 0;
+             text-align: left;
+             height: 15%;
+             position: absolute;
+             overflow: hidden;
+
+
+         }
+
+         .home_text {
+             padding: 0px 0px 0px 100px;
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+             position: relative;
+
+         }
+
+
+
+
+
+
+         .contact_header {
+             width: 100%;
+             height: 700px;
+             overflow-y: hidden;
+             position: absolute;
+
+         }
+
+         .contact_header img {
+             width: 100%;
+         }
+
+         .contanct_header_text {
+             top: 50%;
+             left: 35%;
+             transform: translate(-50%, -50%);
+             position: absolute;
+             color: white;
+         }
+
+         .contanct_header_text p {
+             font-size: 20px;
+         }
